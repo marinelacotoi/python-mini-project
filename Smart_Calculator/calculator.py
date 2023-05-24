@@ -70,7 +70,7 @@ win.title('Smart Calculator')
 win.geometry('500x300')
 win.configure(bg='lightskyblue')
 
-win.resizable(0, 0)
+win.resizable(False, False)
 win.columnconfigure(0, weight=1)
 win.columnconfigure(1, weight=2)
 win.columnconfigure(2, weight=1)

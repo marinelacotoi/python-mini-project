@@ -1,7 +1,13 @@
+"""
+A math game that ask user to answer a random math problem
+"""
 import random
 import operator
 
 def random_problem():
+    '''
+    Generate a random math problem
+    '''
     operators = {
         '+': operator.add,
         '-': operator.sub,
@@ -17,14 +23,20 @@ def random_problem():
     return answer
 
 def ask_question():
+    '''
+    Ask user to answer the question
+    '''
     answer = random_problem()
     guess = float(input('Enter you answer: '))
     return guess == answer
 
 def game():
+    '''
+    Main game function
+    '''
     score = 0
     while True:
-        if ask_question() == True:
+        if ask_question() is True:
             score += 1
             print('Correct !')
         else:
