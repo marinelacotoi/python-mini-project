@@ -1,7 +1,7 @@
 name: Python Code Checks
 
 on:
-  pull_request:
+  push:
     branches:
       - "*"
 
